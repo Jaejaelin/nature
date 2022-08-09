@@ -1,1 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 
+body{
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+video{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left: 0;
+}
+
+.vid-wrap {
+  position: absolute;
+  top:0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+
+
+.overlay{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 1200px;
+  height: 100vh;
+  transform: translate(-50%,0);
+  z-index: 1;
+}
+/*
+.overlay::after{
+  width: 1200px;
+  height: 100vh;
+  content:"";
+  top:0;
+  left:0;
+  position: absolute;
+  background-color: #EAE2B6;
+  opacity: 0.85;
+  z-index: -1;
+}
+*/
+
+
+.nav{
+  text-align: center;
+  font-family: 'Changa', sans-serif;
+  z-index: 1;
+  font-size: 100px;
+  font-weight: 500;  
+  border: 1px solid black;
+  height: 100px;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  padding-top: 0px;
+  color: #FBFFE2;
+  border-radius: 80px 1px 80px 1px;
+}
+
+.main{
+  border: 1px solid black;
+  margin-top: 30px;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+img{
+  width: 380px;
+}
+
+.pa {
+  animation-name: ani01;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes ani01{
+  from{
+  transform: translate(0,0);
+  }
+  to{
+  transform: translate(0,-10px);
+  }
+}
+
+
+
+
+}
